@@ -10,6 +10,9 @@ import App from './App.vue'
 //  加载路由配置
 import router from './router'
 
+//  加载全局样式 index.less
+import './styles/index.less'
+
 //  关闭生产环境提示
 Vue.config.productionTip = false
 /**
