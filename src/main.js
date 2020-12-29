@@ -2,7 +2,6 @@
 /**
  * 入口
  */
-
 // 加载 Vue
 import Vue from 'vue'
 //  加载项目根组件
@@ -12,6 +11,13 @@ import router from './router'
 
 //  加载全局样式 index.less
 import './styles/index.less'
+
+//  加载 Element 组件库
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+//  全局注册-类似 node express 中间件
+Vue.use(ElementUI)
 
 //  关闭生产环境提示
 Vue.config.productionTip = false
